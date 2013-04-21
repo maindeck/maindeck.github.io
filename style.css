@@ -1,0 +1,11 @@
+
+#logo
+{
+	width: 1024px;
+	height: 214px;
+	margin: 214px auto;
+	background-image: url('maindeck.svg');	
+	background-repeat: no-repeat;
+	background-position: center; 
+	background-size: 100%
+}
