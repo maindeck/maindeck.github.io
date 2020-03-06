@@ -1,9 +1,9 @@
 @font-face {
-  font-family: 'isonorm';
-  src: url("isonorm-mn.ttf");
+  font-family: 'osifont';
+  src: url("osifont.ttf");
 }
 body {
-  font-family: 'isonorm';
+  font-family: 'osifont';
   font-size: 16px;
   line-height: 1.65;
   margin: 0 auto;
@@ -29,11 +29,11 @@ header #company-name #sub {
 }
 header #company-description {
   margin: 16px 0;
-  font-size: 24px;
+  font-size: 22px;
 }
 
 content ul {
-  font-size: 24px;
+  font-size: 0px;
   margin: 8px 0;
   line-height: 0;
   padding: 0;
@@ -47,10 +47,9 @@ content ul li {
 content ul li:after {
   color: #005a96;
   white-space: pre;
-  content: "  \2022  ";
-  font-size: 24px;
+  content: " \2022  ";
   line-height: 0;
-  vertical-align: middle;
+  vertical-align: center;
 }
 content ul li:last-child:after {
   content: "";
@@ -59,7 +58,7 @@ content #sectors, content #project-types, content #expertise, content #maxim, co
   text-align: center;
 }
 content #sectors, content #expertise, content #maxim {
-  margin-top: 32px;
+  margin-top: 24px;
 }
 content #project-types {
   font-size: 14px;
@@ -74,7 +73,7 @@ content #contact-heading {
   font-weight: bold;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
   content ul#expertise li {
     display: block;
   }
