@@ -12,6 +12,7 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   margin: 0;
   padding: 0;
   font-weight: normal;
+  font-size: 16px;
 }
 
 ol, ul {
@@ -23,7 +24,7 @@ img {
   height: auto;
 }
 
-/* Maindeck */
+/* Main Deck */
 @font-face {
   font-family: 'osifont';
   src: url("osifont.ttf");
@@ -59,57 +60,63 @@ body {
   font-size: 22px;
 }
 
-#content ul {
+section ul {
   font-size: 0px;
   margin: 8px 0;
   line-height: 0;
   padding: 0;
 }
-#content ul li {
+section ul li {
   display: inline-block;
   list-style: none;
   font-size: 16px;
   line-height: 1.65;
 }
-#content ul li:after {
+section ul li:after {
   color: #005a96;
   white-space: pre;
   content: " \2022  ";
   line-height: 0;
   vertical-align: center;
 }
-#content ul li:last-child:after {
+section ul li:last-child:after {
   content: "";
 }
-#content #sectors, #content #project-types, #content #expertise, #content #maxim, #content #contact {
+
+section {
   text-align: center;
 }
-#content #sectors, #content #expertise, #content #maxim {
+
+section#sectors, section#expertise, section#maxim {
   margin-top: 24px;
 }
-#content #project-types {
+
+section#project-types {
   font-size: 14px;
   font-style: italic;
 }
-#content #maxim {
+
+section#maxim p {
   font-weight: bold;
+  color: #005a96;
   font-size: 18px;
   margin-bottom: 18px;
 }
-#content #contact-heading {
+
+h2#contact-heading {
   font-weight: bold;
 }
 
 @media screen and (max-width: 800px) {
-  #content ul#expertise li {
+  section#expertise ul li {
     display: block;
   }
-  #content ul#expertise li:after {
+  section#expertise ul li:after {
     content: "";
     line-height: 16px;
     display: block;
   }
-  #content ul#expertise li:last-child:after {
+  section#expertise ul li:last-child:after {
     content: "";
     display: inline;
   }
