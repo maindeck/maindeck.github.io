@@ -2,6 +2,7 @@
   font-family: 'osifont';
   src: url("osifont.ttf");
 }
+
 body {
   font-family: 'osifont';
   font-size: 16px;
@@ -11,78 +12,78 @@ body {
   color: #3c3c3c;
 }
 
-header {
+#masthead {
   text-align: center;
 }
-header #company-name #super {
+#masthead #company-name #super {
   margin: 0;
   padding: 0;
   font-size: 64px;
   line-height: 64px;
   color: #005a96;
 }
-header #company-name #sub {
+#masthead #company-name #sub {
   margin: 0;
   padding: 0;
   font-size: 32px;
   line-height: 32px;
 }
-header #company-description {
+#masthead #company-description {
   margin: 16px 0;
   font-size: 22px;
 }
 
-content ul {
+#content ul {
   font-size: 0px;
   margin: 8px 0;
   line-height: 0;
   padding: 0;
 }
-content ul li {
+#content ul li {
   display: inline-block;
   list-style: none;
   font-size: 16px;
   line-height: 1.65;
 }
-content ul li:after {
+#content ul li:after {
   color: #005a96;
   white-space: pre;
   content: " \2022  ";
   line-height: 0;
   vertical-align: center;
 }
-content ul li:last-child:after {
+#content ul li:last-child:after {
   content: "";
 }
-content #sectors, content #project-types, content #expertise, content #maxim, content #contact {
+#content #sectors, #content #project-types, #content #expertise, #content #maxim, #content #contact {
   text-align: center;
 }
-content #sectors, content #expertise, content #maxim {
+#content #sectors, #content #expertise, #content #maxim {
   margin-top: 24px;
 }
-content #project-types {
+#content #project-types {
   font-size: 14px;
   font-style: italic;
 }
-content #maxim {
+#content #maxim {
   font-weight: bold;
   font-size: 18px;
   margin-bottom: 18px;
 }
-content #contact-heading {
+#content #contact-heading {
   font-weight: bold;
 }
 
 @media screen and (max-width: 800px) {
-  content ul#expertise li {
+  #content ul#expertise li {
     display: block;
   }
-  content ul#expertise li:after {
+  #content ul#expertise li:after {
     content: "";
     line-height: 16px;
     display: block;
   }
-  content ul#expertise li:last-child:after {
+  #content ul#expertise li:last-child:after {
     content: "";
     display: inline;
   }
