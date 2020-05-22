@@ -91,7 +91,7 @@ section#sectors, section#expertise, section#maxim {
   margin-top: 24px;
 }
 
-section#project-types {
+section#project-types p {
   font-size: 14px;
   font-style: italic;
 }
